@@ -86,7 +86,7 @@ function CartSection() {
         <div
           style={
             CartItems && CartItems.length === 0
-              ? { height: "40vh" }
+              ? { height: " 40vh" }
               : { height: "100%" }
           }
           className={CartItems ? `cart-section animate` : `cart-section`}
@@ -192,7 +192,7 @@ function CartSection() {
               <p>
                 Congrats! You're eligible for <b>Free Delivery</b>.
                 <p style={{ marginTop: "5px", marginBottom: "0px" }}>
-                  Use code <b>DIVYANSU24</b> for 20% discount.
+                  Use code <b>ATULRANJAN73</b> for 20% discount.
                 </p>
               </p>
             </div>
@@ -206,11 +206,11 @@ function CartSection() {
               />
               <button
                 onClick={() => {
-                  if (promocode === "DIVYANSU24") {
+                  if (promocode === "ATULRANJAN73") {
                     TotalValue(totalPrice1);
                     setdiscountCode(promocode);
                     setCorrectCode(true);
-                  } else if (promocode !== "DIVYANSU24") {
+                  } else if (promocode !== "ATULRANJAN73") {
                     setdiscountCode(promocode);
                     TotalValue(totalPrice2);
                     setCorrectCode(false);

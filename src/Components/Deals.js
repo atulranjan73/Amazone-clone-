@@ -21,7 +21,9 @@ function Deals() {
   useEffect(() => {
     const GetProducts = async () => {
       const data = await fetch("https://fakestoreapi.com/products");
+      // console.log(data);
       const new_data = await data.json();
+    
       setLoading(false);
       setAllProducts(new_data);
       // Add a review number property to each item object
